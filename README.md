@@ -11,3 +11,4 @@
 * 2021.11.27 / 스택 : [function_develop](https://programmers.co.kr/learn/courses/30/lessons/42586) / math의 ceil을 이용하여 계산하고, 스택 알고리즘 적용
 * 2021.11.28 / 큐 : [printer](https://programmers.co.kr/learn/courses/30/lessons/42587) / deque를 이용하여 큐 알고리즘 적용
 * 2021.11.29 / 큐 : [truck_on_bridge](https://programmers.co.kr/learn/courses/30/lessons/42583) / 큐 알고리즘 적용
+* 2021.11.30 / 큐 : [stock_price](https://programmers.co.kr/learn/courses/30/lessons/42584) / deque를 이용하여 큐 알고리즘 적용
