@@ -12,3 +12,5 @@
 * 2021.11.28 / 큐 : [printer](https://programmers.co.kr/learn/courses/30/lessons/42587) / deque를 이용하여 큐 알고리즘 적용
 * 2021.11.29 / 큐 : [truck_on_bridge](https://programmers.co.kr/learn/courses/30/lessons/42583) / 큐 알고리즘 적용
 * 2021.11.30 / 큐 : [stock_price](https://programmers.co.kr/learn/courses/30/lessons/42584) / deque를 이용하여 큐 알고리즘 적용
+* 2021.12.01 / 정렬 : [maximum_number](https://programmers.co.kr/learn/courses/30/lessons/42746) / sort 메서드의 lambda를 이용하여 조건에 맞게 정렬 후 join
+* 2021.12.01 / 정렬 : [h_index](https://programmers.co.kr/learn/courses/30/lessons/42747) / 해당 값에 맞는 경우를 정렬하여 결과 값을 출력
