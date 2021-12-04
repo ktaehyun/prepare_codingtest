@@ -16,3 +16,4 @@
 * 2021.12.02 / 완전탐색 : [carpet](https://programmers.co.kr/learn/courses/30/lessons/42842) / 완전탐색으로 해결 가능하나, 일정한 규칙(식)이 존재하여 해당 식을 적용
 * 2021.12.03 / 정렬 : [h_index](https://programmers.co.kr/learn/courses/30/lessons/42747) / 해당 값에 맞는 경우를 정렬하여 결과 값을 출력
 * 2021.12.04 / DFS : [target_number](https://programmers.co.kr/learn/courses/30/lessons/43165) / 스택을 이용하여 DFS 알고리즘 적용
+* 2021.12.05 / 완전탐색 : [millionaire](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5LrsUaDxcDFAXc&categoryId=AV5LrsUaDxcDFAXc&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=PYTHON&select-1=2&pageSize=10&pageIndex=1) / for 문을 이용하여 끝 위치부터 확인하며 결과 값을 얻는다
