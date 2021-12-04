@@ -8,6 +8,5 @@ def solution(numbers, target):
             temp.append(pop_num - number)
             temp.append(pop_num + number)
         q = temp
-        print('q:', q, '\n')
         
     return q.count(target)
