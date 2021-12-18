@@ -1,4 +1,5 @@
 n = int(input())
+
 for x in range(1, n+1):
     str_x = str(x)
     sum_count = str_x.count('3') + str_x.count('6') + str_x.count('9')
