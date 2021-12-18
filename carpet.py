@@ -5,7 +5,5 @@ def solution(brown, yellow):
             if brown==2*(a+b-2) and yellow==(a*b)-brown:
                 result = [a, b]
                 break
-            else:
-                continue
         
     return result
