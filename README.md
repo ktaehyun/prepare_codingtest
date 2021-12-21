@@ -25,3 +25,4 @@
 * 2021.12.12 / [flatten](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV139KOaABgCFAYh&categoryId=AV139KOaABgCFAYh&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=PYTHON&select-1=3&pageSize=10&pageIndex=1) / 조건에 맞는 값을 1번의 for문을 통해서 구하고자 max, min 메서드를 활용하여 결과 값을 얻는다
 * 2021.12.13 / [crop_harvest](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV7GLXqKAWYDFAXB&categoryId=AV7GLXqKAWYDFAXB&categoryType=CODE&problemTitle=&orderBy=RECOMMEND_COUNT&selectCodeLang=PYTHON&select-1=3&pageSize=10&pageIndex=1) / 해당 문제의 구하는 방식을 파악하여 알고리즘을 구현해 결과 값을 얻는다
 * 2021.12.20 / 정렬 : [fail_rate](https://programmers.co.kr/learn/courses/30/lessons/42889) / 단계별 실패율을 구한 후 정렬하여 결과 값을 얻는다
+* 2021.12.21 / DP : [resignation.py](https://www.acmicpc.net/problem/14501) / dp 테이블을 만들어서 for문을 이용해 뒤에서 부터 작업별로 dp 테이블을 업데이트 해주도록 DP 알고리즘 적용
