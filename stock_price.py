@@ -3,10 +3,7 @@ from collections import deque
 def solution(prices):
     answer = []
     
-    q = deque()
-    for price in prices:
-        q.append(price)
-    
+    q = deque(prices)
     while q:
         time = 0
         price = q.popleft()
@@ -15,11 +12,10 @@ def solution(prices):
             break
         for x in q:
             time += 1
-            if x >= price:
-                if time == len(q):
-                    answer.append(time)
-            else:
+            if x < price:
                 answer.append(time)
-                break
+                break                    
+        else:
+            answer.append(time)
     
     return answer
