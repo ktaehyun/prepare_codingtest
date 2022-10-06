@@ -35,7 +35,7 @@ from collections import deque
 def solution(maps):
     n = len(maps[0])
     m = len(maps)
-    visited = [[False for col in range(len(maps[0]))] for row in range(len(maps))]
+    visited = [[False for col in range(n)] for row in range(m)]
     visited[0][0] = True
 
     queue = deque()
