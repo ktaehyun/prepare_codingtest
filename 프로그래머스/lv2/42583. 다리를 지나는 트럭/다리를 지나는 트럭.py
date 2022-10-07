@@ -1,4 +1,5 @@
 def solution(bridge_length, weight, truck_weights):
+    
     time = 0
     
     bridge = [0] * bridge_length
