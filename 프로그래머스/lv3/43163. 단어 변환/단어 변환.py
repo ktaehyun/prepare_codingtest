@@ -9,7 +9,9 @@ def checking(target, words, q, length, moment, time):
             return time
         for word in words:
             for i in range(length):
-                if word not in moment and now[i]==word[i]:
+                if word in moment:
+                    break
+                elif now[i]==word[i]:
                     count += 1
             if count == length - 1:
                 temp.append(word)
