@@ -1,7 +1,7 @@
 def solution(genres, plays):
     result = []
     
-    temp, temp_sum = {}, {}
+    temp = {}
     for i, gp in enumerate(zip(genres, plays)):
         try:
             temp[gp[0]].append([i, gp[1], temp[gp[0]][-1][2]+gp[1]])
