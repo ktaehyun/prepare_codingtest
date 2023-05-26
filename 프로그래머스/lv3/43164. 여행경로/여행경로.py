@@ -7,7 +7,7 @@ def solution(tickets):
             a = [stack[i] for i in range(n+1)]
             answer.append(a)
         for i in range(n):
-            if not visited[i] and stack[-1] == tickets[i][0]:
+            if not visited[i] and stack[-1]==tickets[i][0]:
                 visited[i] = 1
                 stack.append(tickets[i][1])
                 dfs()
@@ -22,5 +22,5 @@ def solution(tickets):
             stack.append(tickets[i][0])
             stack.append(tickets[i][1])
             dfs()
-
+            
     return min(answer)
