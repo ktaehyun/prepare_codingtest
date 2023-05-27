@@ -29,7 +29,9 @@ def bfs(board, dir):
             if nc < price[nx][ny]:
                 price[nx][ny] = nc
                 queue.append((nx, ny, nc, d))
+                
     return price[-1][-1]
+
 
 def solution(board):
     answer = min(bfs(board,0), bfs(board,2))
