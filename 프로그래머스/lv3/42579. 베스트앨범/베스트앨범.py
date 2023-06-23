@@ -10,7 +10,7 @@ def solution(genres, plays):
 
     temp = dict(sorted(temp.items(), key=lambda x: x[-1][-1][-1], reverse=True))
     for value in temp.values():
-        value.sort(key=lambda x: (x[1], -x[0]), reverse=True)
+        value.sort(key=lambda x: (-x[1], x[0]))
         cnt = 0
         for v in value:
             result.append(v[0])
