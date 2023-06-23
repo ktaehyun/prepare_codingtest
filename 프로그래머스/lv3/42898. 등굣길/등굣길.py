@@ -1,7 +1,7 @@
 def solution(m, n, puddles):
     
     puddles = [[q-1,p-1] for [p,q] in puddles]  # 미리 puddles 좌표 거꾸로
-    dp = [[0] * m for i in range(n)]  # dp 초기화
+    dp = [[0] * m for _ in range(n)]  # dp 초기화
     dp[0][0] = 1  # 시작 위치
 
     for i in range(n):
