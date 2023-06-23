@@ -1,11 +1,12 @@
 from collections import deque
     
+    
 def comparison(now, words, length, moment, count, temp):
     for word in words:
+        if word in moment:
+            continue
         for i in range(length):
-            if word in moment:
-                break
-            elif now[i] == word[i]:
+            if now[i] == word[i]:
                 count += 1
         if count == length - 1:
             temp.append(word)
