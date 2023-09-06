@@ -23,4 +23,5 @@ def solution(tickets):
             stack.append(tickets[i][1])
             dfs()
             
+    # print(answer)
     return min(answer)
