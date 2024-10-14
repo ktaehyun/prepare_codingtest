@@ -1,10 +1,8 @@
-from collections import deque
-
 def solution(s):
     
     cnt = 0
     for now in s:
-        if now == "(":
+        if now == '(':
             cnt += 1
         else:
             cnt -= 1
