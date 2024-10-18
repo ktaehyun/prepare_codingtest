@@ -1,7 +1,8 @@
 from collections import deque
-    
-    
+
+
 def comparison(now, words, length, moment, count, temp):
+    print(temp, "처음")
     for word in words:
         if word in moment:
             continue
@@ -13,11 +14,11 @@ def comparison(now, words, length, moment, count, temp):
             moment.append(word)
         else:
             count = 0
-            
+    print(temp, "끝")
     return temp, moment
-        
-    
-def checking(target, words, q, length, moment, time):
+
+
+def check(target, words, q, length, moment, time):
     time += 1
     count, temp = 0, []
     while q:
@@ -26,7 +27,7 @@ def checking(target, words, q, length, moment, time):
             return time
         temp, moment = comparison(now, words, length, moment, count, temp)
         
-    return checking(target, words, deque(temp), length, moment, time)
+    return check(target, words, deque(temp), length, moment, time)
 
 
 def solution(begin, target, words):
@@ -36,4 +37,4 @@ def solution(begin, target, words):
     q, count, length = deque(), 0, len(begin)
     q, _ = comparison(begin, words, length, [], count, q)
     
-    return checking(target, words, q, length, list(q), 0)
+    return check(target, words, q, length, list(q), 0)
