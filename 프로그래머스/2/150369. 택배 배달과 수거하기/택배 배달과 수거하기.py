@@ -1,16 +1,16 @@
 def solution(cap, n, deliveries, pickups):
+    ans = 0
+    
     deliveries = deliveries[::-1]
     pickups = pickups[::-1]
-    answer = 0
     
-    now_deli = 0
-    now_pick = 0
+    deli, pick = 0, 0
     for i in range(n):
-        now_deli += deliveries[i]
-        now_pick += pickups[i]
-        while now_deli>0 or now_pick>0 :
-            now_deli -= cap
-            now_pick -=cap
-            answer += (n-i) * 2
+        deli += deliveries[i]
+        pick += pickups[i]
+        while deli>0 or pick>0:
+            deli -= cap
+            pick -= cap
+            ans += (n-i)*2
             
-    return answer
+    return ans
