@@ -1,9 +1,7 @@
 def solution(N, stages):
-    
-    answer = []
+    ans = []
     
     stages.sort()
-    
     result = []
     for n in range(1, N+1):
         if n in stages:
@@ -12,8 +10,8 @@ def solution(N, stages):
         else:
             result.append((0, n))
             
-    result.sort(key = lambda x: (-x[0], x[1]))
+    result.sort(key=lambda x: (-x[0], x[1]))
     for rs in result:
-        answer.append(rs[1])
+        ans.append(rs[1])
         
-    return answer
+    return ans
