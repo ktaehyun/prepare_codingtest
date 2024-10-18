@@ -1,12 +1,14 @@
 def solution(numbers, target):
     
-    q = [numbers[0], -numbers[0]]
-    for number in numbers[1:]:
+    tmp = numbers.pop(0)
+    result = [tmp, -tmp]
+    while numbers:
+        now = numbers.pop(0)
         temp = []
-        while q:
-            now = q.pop()
-            temp.append(now + number)
-            temp.append(now - number)
-        q = temp
+        while result:
+            number = result.pop()
+            temp.append(number+now)
+            temp.append(number-now)
+        result = temp
         
-    return q.count(target)
+    return result.count(target)
