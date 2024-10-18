@@ -2,11 +2,11 @@ def solution(s):
     ans = len(s)
     
     length = ans
-    point = length//2
-    for end in range(1, point+1):
-        prev, cnt, string = s[:end], 1, ''
-        for i in range(end, length+1, end):
-            now = s[i:i+end]
+    leng = length // 2
+    for i in range(1, leng+1):
+        prev, cnt, string = s[:i], 1, ''
+        for j in range(i, length, i):
+            now = s[j:j+i]
             if now == prev:
                 cnt += 1
             else:
