@@ -1,12 +1,12 @@
 discounts = [10, 20, 30, 40]
-answer = [-1, -1]
+ans = [-1, -1]
 
 def solution(users, emoticons):
     n, m = len(users), len(emoticons)
     discount_list = [0]*m
     
     def search(idx):
-        global answer
+        global ans
         if idx == m:
             sale, cost = 0, 0
             for i in range(n):
@@ -18,14 +18,13 @@ def solution(users, emoticons):
                     sale += 1
                 else:
                     cost += tmp
-            if sale>answer[0] or (sale==answer[0] and cost>answer[1]):
-                answer = [sale, cost]
+            if sale>ans[0] or (sale==ans[0] and cost>ans[1]):
+                ans = [sale, cost]
             return
-        
+                    
         for i in range(4):
             discount_list[idx] = discounts[i]
             search(idx+1)
-        
+            
     search(0)
-    
-    return answer
+    return ans
